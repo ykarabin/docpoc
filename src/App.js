@@ -5,9 +5,9 @@ import {DocViewer} from './DocViewer';
 function App() {
   return (
     <div className="App">
-      <DocViewer url="/doc.docx" />
+      <DocViewer url="/docpoc/doc.docx" />
       <br/>
-      <DocViewer url="/doc.pdf" />
+      <DocViewer url="/docpoc/doc.pdf" />
     </div>
   );
 }
