@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import WebViewer from '@pdftron/webviewer'
 
-export const DocViewer = ({url}) => {
+export const DocViewer = ({url, className}) => {
     const viewer = useRef(null);
 
     useEffect(() => {
@@ -16,9 +16,9 @@ export const DocViewer = ({url}) => {
 
 
         });
-    }, []);
+    }, [url]);
 
     return (
-        <div ref={viewer} style={{height: "500px"}}/>
+        <div key={url} ref={viewer} className={className}/>
     );
 };

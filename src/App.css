@@ -1,4 +1,26 @@
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.format{
+  padding: 8px;
+  font-weight: bold;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  flex-grow: 1;
+  margin: 8px;
+}
+
+.doc{
+  flex-grow: 1;
 }
