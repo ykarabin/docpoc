@@ -7,7 +7,7 @@ export const DocViewer = ({url}) => {
     useEffect(() => {
         WebViewer(
             {
-                path: '/webviewer/lib',
+                path: '/docpoc/webviewer/lib',
             },
             viewer.current,
         ).then(instance => {
