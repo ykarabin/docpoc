@@ -8,13 +8,13 @@ function App() {
     return (
         <div className="App">
             <div className="buttons">
-                <button onClick={()=>{setFormat('docx')}}>docx</button>
-                <button onClick={()=>{setFormat('xlsx')}}>xlsx</button>
-                <button onClick={()=>{setFormat('pptx')}}>pptx</button>
-                <button onClick={()=>{setFormat('pdf')}}>pdf</button>
+                <button onClick={()=>{setFormat('docxSample.docx')}}>docxSample.docx</button>
+                <button onClick={()=>{setFormat('docxSample.xod')}}>docxSample.xod</button>
+                <button onClick={()=>{setFormat('pptxSample.pptx')}}>pptxSample.pptx</button>
+                <button onClick={()=>{setFormat('pptxSample.xod')}}>pptxSample.xod</button>
             </div>
             <div className="format">{format}</div>
-            <DocViewer className="doc" url={`/docpoc/doc.${format}`} />
+            <DocViewer className="doc" url={`/docpoc/${format}`} />
         </div>
     );
 }
