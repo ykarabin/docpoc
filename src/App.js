@@ -6,7 +6,7 @@ function App() {
     const [format, setFormat] = useState('docxSample.docx');
 
     return (
-        <div className="App ">
+        <div className="App">
             <div className="buttons">
                 <button onClick={()=>{setFormat('docxSample.docx')}}>docxSample.docx</button>
                 <button onClick={()=>{setFormat('docxSample.xod')}}>docxSample.xod</button>
